@@ -1,0 +1,45 @@
+-- Create customers table
+CREATE TABLE IF NOT EXISTS customers (
+    customer_id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(50),
+    city VARCHAR(100),
+    state VARCHAR(100),
+    country VARCHAR(100),
+    created_at DATE,
+    UNIQUE KEY unique_email (email)
+);
+
+-- Insert all customer data
+INSERT INTO customers (customer_id, name, email, phone, city, state, country, created_at) VALUES
+(1, 'Daniel Lindsey', 'sjames@example.org', '(572)667-3229', 'Andersonchester', 'Arkansas', 'Croatia', '2025-05-31'),
+(2, 'Samantha Drake', 'edwardscharlene@example.net', '001-914-279-0469x8803', 'Katherineview', 'Arkansas', 'Sudan', '2025-02-07'),
+(3, 'Austin Walton', 'blee@example.org', '(649)340-6874', 'Lawsonmouth', 'Virginia', 'Madagascar', '2025-08-28'),
+(4, 'Jeffery Banks', 'rebeccaburke@example.com', '+1-512-638-1076x65663', 'South Williamtown', 'Utah', 'Lebanon', '2025-08-28'),
+(5, 'Amber Rodriguez', 'gailbaker@example.org', '895-696-7542x55932', 'Port Darlene', 'Pennsylvania', 'Martinique', '2025-06-03'),
+(6, 'Veronica Hopkins', 'brittany02@example.com', '001-608-536-6068x9088', 'Michaelville', 'Louisiana', 'Turkey', '2025-08-17'),
+(7, 'Christopher Henderson', 'angela84@example.org', '001-535-789-6668x2859', 'Leeport', 'North Carolina', 'Tanzania', '2025-04-23'),
+(8, 'Daniel Smith', 'fgraham@example.net', '586-544-4931', 'South Lisa', 'Tennessee', 'Tajikistan', '2025-07-16'),
+(9, 'Monica Townsend', 'meganwallace@example.org', '001-823-766-7976x2738', 'Donaldhaven', 'Washington', 'Portugal', '2025-08-21'),
+(10, 'Matthew Johnson', 'mooremichael@example.com', '001-714-923-2095x682', 'Natashaborough', 'Kansas', 'Micronesia', '2025-04-06'),
+(11, 'Ryan Gardner', 'heatherharrison@example.org', '847-648-9085', 'Carriechester', 'Indiana', 'Guyana', '2025-09-14'),
+(12, 'Kimberly Baker', 'brittany01@example.org', '8322912688', 'West Williamton', 'Wyoming', 'Iceland', '2025-02-15'),
+(13, 'Pamela Herring', 'bwilliams@example.org', '001-868-779-3695x876', 'West Matthewview', 'Washington', 'Montserrat', '2025-03-18'),
+(14, 'Corey Walters', 'andersonjose@example.net', '001-719-424-3815', 'New Martinstad', 'Florida', 'Mongolia', '2025-03-17'),
+(15, 'Alicia Tucker', 'jjohnson@example.com', '9035473398', 'Caitlinstad', 'Pennsylvania', 'Honduras', '2025-02-18'),
+(16, 'Daniel Blevins', 'anthonygonzalez@example.com', '611.301.3395x2867', 'Lake Kenneth', 'South Carolina', 'Swaziland', '2025-03-03'),
+(17, 'Shannon Lane', 'joshua43@example.com', '(606)638-7331x5936', 'Katrinatown', 'Arkansas', 'Guernsey', '2025-01-29'),
+(18, 'Christina Myers', 'ufields@example.net', '001-730-767-1997', 'Castilloside', 'South Carolina', 'Vanuatu', '2025-07-06'),
+(19, 'Amber Lewis', 'aliciamccann@example.org', '(337)556-5773x30877', 'Garciamouth', 'Oklahoma', 'Palau', '2025-04-29'),
+(20, 'Ricardo Patel', 'andrea49@example.net', '554.947.7776x78825', 'Leahland', 'Florida', 'Jersey', '2025-05-10'),
+(21, 'Elizabeth Fowler', 'ileach@example.org', '628.767.0668', 'Mcdanielville', 'Florida', 'Heard Island and McDonald Islands', '2025-03-22'),
+(22, 'Emily Ortiz', 'joshuabaker@example.com', '7413616802', 'Josehaven', 'Oklahoma', 'Haiti', '2025-01-05'),
+(23, 'Aaron Young', 'nguyenmegan@example.net', '(808)729-7803', 'Lake Matthewbury', 'Colorado', 'Turks and Caicos Islands', '2025-04-15'),
+(24, 'Erika Carter', 'matthew27@example.net', '+1-689-618-5863x2433', 'Jessicafort', 'California', 'Luxembourg', '2025-02-26'),
+(25, 'Joshua Perkins', 'cynthiaharris@example.org', '(733)362-9113x15838', 'Nicholasburgh', 'Mississippi', 'Nauru', '2025-03-08'),
+(26, 'Danielle Mann', 'michael02@example.org', '265.682.1073', 'East Tyler', 'Connecticut', 'Paraguay', '2025-02-12'),
+(27, 'Sara Fisher', 'moorediane@example.net', '(929)738-1858x5562', 'Lake Jesse', 'Montana', 'Niue', '2025-06-16'),
+(28, 'Tonya Cook', 'brownchristopher@example.net', '(256)819-7925', 'Chadside', 'Maine', 'Bhutan', '2025-01-30'),
+(29, 'Dylan Black', 'qjohnson@example.com', '(362)635-5699x838', 'South Michael', 'Florida', 'Ethiopia', '2025-02-08'),
+(30, 'Tiffany Richardson', 'andersonjohn@example.org', '+1-777-822-7031', 'Victorberg', 'Texas', 'Armenia', '2025-05-01');
